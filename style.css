@@ -6,11 +6,13 @@
 
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 
 body {
   font-family: 'Spartan', sans-serif;
   color: hsl(0, 0%, 63%);
+  height: 100%;
 }
 
 button {
@@ -45,10 +47,14 @@ header {
   padding: 20px 0;
 }
 
+/* .top-row__col-text {
+  height: 35rem;
+} */
+
 .top-row__hero-image-cont {
   width: 100%;
   height: 35rem;
-  background: url(./images/mobile-image-hero-1.jpg);
+  background: url(./images/desktop-image-hero-1.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -69,8 +75,12 @@ header {
   background-position: center;
 }
 
-.col-text {
+.col-text-prim {
   padding: 7rem 3rem;
+}
+
+.col-text-sec {
+  padding: 6rem 3rem;
 }
 
 .heading-primary {
@@ -109,4 +119,105 @@ header {
 
 .btn-primary img {
   width: 5rem;
+}
+
+@media (min-width: 1000px) {
+  .top-row {
+    display: flex;
+  }
+
+  .top-row__arrows {
+    left: 60%;
+    top: 60vh;
+    width: 10%;
+  }
+
+  .top-row__icon-box {
+    padding: 25px 0;
+  }
+
+  .top-row__col--1 {
+    width: 60%;
+    height: 60vh;
+  }
+
+  .top-row__hero-image-cont {
+    height: 100%;
+  }
+
+  .top-row__col-text {
+    width: 40%;
+    padding: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .col-para {
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+  }
+
+  .btn-primary {
+    margin-top: 3rem;
+    font-size: 1.7rem;
+    letter-spacing: 1.2rem;
+  }
+
+  .btn-primary__text {
+    margin-right: 2.5rem;
+  }
+
+  .btn-primary img {
+    width: 5rem;
+  }
+
+  .bottom-row {
+    display: flex;
+  }
+
+  .bottom-row__img-cont {
+    width: 30%;
+    height: 40vh;
+  }
+
+  .col-text-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    height: 40vh;
+    padding: 0 5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .top-row__icon-box {
+    padding: 20px 0;
+  }
+
+  .top-row__col-text {
+    padding: 0 7rem;
+  }
+  .heading-primary {
+    font-size: 3.5rem;
+    font-weight: 600;
+  }
+
+  .heading-secondary {
+    letter-spacing: 0.7rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  .top-row__icon-box {
+    padding: 25px 0;
+  }
+
+  .top-row__col-text {
+    padding: 0 10rem;
+  }
+  .heading-primary {
+    font-size: 4rem;
+    font-weight: 600;
+  }
 }
