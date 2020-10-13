@@ -23,7 +23,27 @@ header {
   min-height: 100vh;
 }
 
+.top-row {
+  position: relative;
+}
 
+.top-row__arrows {
+  width: 140px;
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 35rem;
+  transform: translateY(-100%);
+}
+
+.top-row__icon-box {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  padding: 20px 0;
+}
 
 .top-row__hero-image-cont {
   width: 100%;
@@ -71,7 +91,7 @@ header {
 
 .col-para {
   font-size: 1.5rem;
-  line-height: 2.5rem;
+  line-height: 2.8rem;
 }
 
 .btn-primary {
